@@ -13,7 +13,9 @@ npm install --global yarn
 
 Follow these steps to start working on this project:
 
-1. Open your terminal and navigate to the project directory. Before making any changes, commit the current state of the project:
+1. Download this project as a ZIP file and unzip it to a location on your local computer.
+
+2. Open your terminal and navigate to the directory where you unzipped the project. Before making any changes, commit the current state of the project:
 
 ```bash
 git init
@@ -21,29 +23,29 @@ git add .
 git commit -m "Initial commit"
 ```
 
-2. Push this project to your GitHub account by creating a new repository on GitHub. Make sure to set the repository visibility to 'Public'. This will allow us to access and evaluate your solution.
+3. Push this project to your GitHub account by creating a new repository on GitHub. Make sure to set the repository visibility to 'Public'. This will allow us to access and evaluate your solution.
 
-3. On your local, create a new branch named "assessment" from "main" or "master" branch:
+4. On your local, create a new branch named "assessment" from "main" or "master" branch:
 
 ```bash
 git checkout -b assessment
 ```
 
-4. Install the necessary packages using Yarn:
+5. Install the necessary packages using Yarn:
 
 ```bash
 yarn install
 ```
 
-5. Launch the project on your local machine:
+6. Launch the project on your local machine:
 
 ```bash
 yarn start
 ```
 
-This command will start the development server at `http://localhost:3000`. Then, Visit `http://localhost:3000/account/basic-profile`.
+This command will start the development server at `http://localhost:3000`.
 
-6. Now, complete the following tasks:
+7. Now, complete the following tasks:
 
 ### Task 1: Disable Redirection to `/login` Route
 
@@ -70,15 +72,15 @@ This command will start the development server at `http://localhost:3000`. Then,
     5. (This is your task) Implement an optimistic update to the cache using RTK query and the payload data. Undo the update if the API request fails.
     6. Refer to the gif expected-results.gif located at the root of the project for a demonstration, and consult the [RTK query documentation on optimistic updates](https://redux-toolkit.js.org/rtk-query/usage/manual-cache-updates#optimistic-updates) for guidance.
 
-7. Once you've made your changes, stage and commit them:
+8. Once you've made your changes, stage and commit them:
 
 ```bash
 git add .
 git commit -am "Fix: Issues"
 ```
 
-8. On your GitHub repository page, create a Pull Request from your "assessment" branch to the "main" or "master" branch.
+9. On your GitHub repository page, create a Pull Request from your "assessment" branch to the "main" or "master" branch.
 
-9. Share the link to your repository's Pull Request with us.
+10. Share the link to your repository's Pull Request with us.
 
 We look forward to reviewing your work.
