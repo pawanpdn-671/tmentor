@@ -56,8 +56,8 @@ This command will start the development server at `http://localhost:3000`. Then,
     1. Navigate to `http://localhost:3000/links`.
     2. Observe the header containing two dropdowns: "Select Company" and "Select Center."
     3. Switch to dark mode by clicking the bulb/moon icon on the top right.
-    4. Identify the issue with the background color of the dropdowns in dark mode.
-    5. (This is your task) Update the code to set the background color to #0f2642 for dark mode.
+    4. Notice the issue with the background color of the dropdowns in dark mode.
+    5. (This is your task) Update the code to set their background color to #0f2642 for dark mode.
     6. Ensure that the fix applies to all instances of this dropdown component, not just the ones on this header.
     7. Verify that the dropdowns look correct in both light and dark modes.
 
@@ -67,11 +67,8 @@ This command will start the development server at `http://localhost:3000`. Then,
     2. Observe that the name is not displayed at the top of the left side-nav after the avatar.
     3. Fill in the first and last name fields on the page.
     4. Click the "Save Changes" button, this action will attempt to send a request using RTK query (note that it will fail as there's no connection to the real API).
-    5. (This is your task) Implement an optimistic update to the cache using RTK query and the payload data.
-    6. Undo the update if the API request fails.
-    7. Refer to the video loom for a demonstration, and consult the [RTK query documentation on optimistic updates](https://redux-toolkit.js.org/rtk-query/usage/manual-cache-updates#optimistic-updates) for guidance.
-
-These tasks are designed for someone experienced with these technologies and should take approximately 10-20 minutes to complete. Good luck!
+    5. (This is your task) Implement an optimistic update to the cache using RTK query and the payload data. Undo the update if the API request fails.
+    6. Refer to the gif expected-results.gif located at the root of the project for a demonstration, and consult the [RTK query documentation on optimistic updates](https://redux-toolkit.js.org/rtk-query/usage/manual-cache-updates#optimistic-updates) for guidance.
 
 7. Once you've made your changes, stage and commit them:
 
