@@ -15,6 +15,7 @@ export const useUser = () => {
   const { data: user } = useIsAuthenticatedQuery()
 
   const { data: dataAccount } = useGetAccountQuery()
+  console.log(dataAccount)
 
   const userEmail = dataAccount?.email || ''
   const userFirstName = dataAccount?.first_name || ''

@@ -21,11 +21,11 @@ export const accountApi = createApi({
     }),
 
     updateAccount: builder.mutation<void, UpdateAccountReqPayload>({
-      query: (body) => {
+      query: ({ email, ...rest }) => {
         return {
           url: `/500`,
           method: 'POST',
-          body,
+          body: email,
           params: {
             sleep: 300,
           },
@@ -36,8 +36,17 @@ export const accountApi = createApi({
       },
       invalidatesTags: ['Account'],
 
-      async onQueryStarted(_args, { queryFulfilled }) {
-        handleOnQueryStartedWithToast(queryFulfilled, { action: 'update' })
+      async onQueryStarted({ ...rest }, { dispatch, queryFulfilled }) {
+        const patchResult = dispatch(
+          accountApi.util.updateQueryData('getAccount', undefined, (draft) => {
+            Object.assign(draft, rest)
+          })
+        )
+        try {
+          await handleOnQueryStartedWithToast(queryFulfilled, { action: 'update' })
+        } catch {
+          patchResult.undo()
+        }
       },
     }),
 
