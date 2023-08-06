@@ -5,11 +5,11 @@ const PrivateRoutes = () => {
   const navigate = useNavigate()
   const authenticated = localStorage.getItem('authenticated')
 
-  useEffect(() => {
-    if (authenticated === 'false' || authenticated === null) {
-      return navigate(`${process.env.PUBLIC_URL}/login`)
-    }
-  })
+  //   useEffect(() => {
+  //     if (authenticated === 'false' || authenticated === null) {
+  //       return navigate(`${process.env.PUBLIC_URL}/login`)
+  //     }
+  //   })
   return <>{<Outlet />}</>
 }
 

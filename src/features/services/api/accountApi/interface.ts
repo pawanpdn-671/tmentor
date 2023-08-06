@@ -2,7 +2,9 @@ export interface GetAccountResponse {
   id: number
   first_name: string
   last_name: string
+  name: string
   cell_phone: string
+  phone: string
   email: string
   username: string
   is_active: boolean
